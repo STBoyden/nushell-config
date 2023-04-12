@@ -668,6 +668,7 @@ let-env DEFAULT_DISTROBOX = "fedora-toolbox-37"
 
 alias customs = ($nu.scope.commands | where is_custom | get name)
 alias cat = bat
+alias ls = lsd -l --header --hyperlink auto
 
 let-env PATH = ($env.PATH 
                 | append "~/.local/share/bin" 
