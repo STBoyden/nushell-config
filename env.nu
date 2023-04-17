@@ -1,5 +1,7 @@
 # Nushell Environment Config File
 
+let-env STARSHIP_CONFIG = $"($env.HOME)/.config/starship/starship.toml"
+
 def create_left_prompt [] {
     let path_segment = if (is-admin) {
         $"(ansi red_bold)($env.PWD)"
